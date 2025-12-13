@@ -12,8 +12,6 @@ const navItems = [
   { name: 'About Us', path: '/about', hasDropdown: true },
   { name: 'Services', path: '/services', hasDropdown: true },
   { name: 'Projects', path: '/portfolio', hasDropdown: true },
-  { name: 'Blog', path: '/blog', hasDropdown: true },
-  { name: 'Pages', path: '/pages', hasDropdown: true },
   { name: 'Contact Us', path: '/contact', hasDropdown: false },
 ];
 
