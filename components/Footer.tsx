@@ -30,7 +30,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-dark border-t border-gray-800">
+    <footer className="bg-black border-t border-gray-800">
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand Section */}
@@ -44,12 +44,12 @@ export default function Footer() {
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400 text-sm">
-                <MapPin className="w-4 h-4 text-cyan" />
+                <MapPin className="w-4 h-4 text-primary" />
                 <span>Virginia, USA</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
-                <Mail className="w-4 h-4 text-cyan" />
-                <a href="mailto:contact@nuvsol.com" className="hover:text-cyan transition-colors">
+                <Mail className="w-4 h-4 text-primary" />
+                <a href="mailto:contact@nuvsol.com" className="hover:text-primary transition-colors">
                   contact@nuvsol.com
                 </a>
               </div>
@@ -65,7 +65,7 @@ export default function Footer() {
                   <li key={link.name}>
                     <Link
                       href={link.path}
-                      className="text-gray-400 hover:text-cyan transition-colors text-sm"
+                      className="text-gray-400 hover:text-primary transition-colors text-sm"
                     >
                       {link.name}
                     </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
                 href={href}
                 aria-label={label}
                 whileHover={{ scale: 1.2, y: -3 }}
-                className="p-2 bg-navy-light rounded-full hover:bg-cyan transition-colors"
+                className="p-2 bg-black-light rounded-full hover:bg-primary transition-colors"
               >
                 <Icon className="w-4 h-4" />
               </motion.a>

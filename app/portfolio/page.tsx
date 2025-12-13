@@ -23,7 +23,7 @@ export default function PortfolioPage() {
       />
 
       {/* Filter */}
-      <section className="py-12 bg-navy">
+      <section className="py-12 bg-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -39,8 +39,8 @@ export default function PortfolioPage() {
                 onClick={() => setActiveCategory(category)}
                 className={`px-6 py-3 rounded-lg font-medium transition-all ${
                   activeCategory === category
-                    ? 'bg-gradient-to-r from-cyan to-cyan-light text-white shadow-lg shadow-cyan/30'
-                    : 'bg-navy-light text-gray-400 hover:text-cyan border border-gray-800'
+                    ? 'bg-gradient-to-r from-primary to-purple text-white shadow-lg shadow-primary/30'
+                    : 'bg-white-light text-gray-400 hover:text-primary border border-gray-800'
                 }`}
               >
                 {category}
@@ -54,7 +54,7 @@ export default function PortfolioPage() {
       <PortfolioGrid />
 
       {/* Stats */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -80,7 +80,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Technologies Used */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white-light">
         <div className="container-custom">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -102,7 +102,7 @@ export default function PortfolioPage() {
                 whileHover={{ y: -5 }}
                 className="card text-center"
               >
-                <div className="text-cyan font-semibold">{tech}</div>
+                <div className="text-primary font-semibold">{tech}</div>
               </motion.div>
             ))}
           </div>

@@ -16,7 +16,7 @@ const products = [
     description: 'MealMind connects home cooks with customers through a smart marketplace powered by cravings-based bidding, nutritional AI, and health personalization.',
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop',
     href: '/products/mealmind',
-    color: 'from-cyan-light to-blue-400',
+    color: 'from-purple-light to-indigo-400',
   },
 ];
 
@@ -33,9 +33,9 @@ export default function ProductsPage() {
       />
 
       {/* Products Grid */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {products.map((product, index) => (
               <motion.div
                 key={index}
@@ -43,7 +43,7 @@ export default function ProductsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="card group overflow-hidden hover:border-cyan/70"
+                className="card group overflow-hidden hover:border-primary/70"
               >
                 <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
                   <Image
@@ -52,12 +52,11 @@ export default function ProductsPage() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-60" />
                 </div>
                 <div className="mb-4">
-                  <h3 className="text-2xl font-bold gradient-text mb-3">{product.name}</h3>
-                  <p className="text-gray-300 text-lg mb-2 font-semibold">{product.title}</p>
-                  <p className="text-gray-400 leading-relaxed">{product.description}</p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{product.name}</h3>
+                  <p className="text-primary text-lg mb-2 font-semibold">{product.title}</p>
+                  <p className="text-gray-500 leading-relaxed text-sm">{product.description}</p>
                 </div>
                 <Link href={product.href}>
                   <PrimaryButton className="group/btn">
@@ -72,14 +71,14 @@ export default function ProductsPage() {
       </section>
 
       {/* Future Products */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="gradient-text">Future Products</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                Future Products
               </h2>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-500 mb-8 leading-relaxed">
                 We are actively developing new solutions in healthcare, clinical research, operations, and 
                 workflow automation.
               </p>

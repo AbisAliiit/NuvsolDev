@@ -125,7 +125,7 @@ export default function CareersPage() {
       />
 
       {/* Why Join Us */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-black">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -144,7 +144,7 @@ export default function CareersPage() {
                 viewport={{ once: true }}
                 className="card text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-gradient-to-br from-cyan to-cyan-light rounded-full">
+                <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-gradient-to-br from-primary to-purple rounded-full">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
@@ -156,7 +156,7 @@ export default function CareersPage() {
       </section>
 
       {/* Perks */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-black-light">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle title="Perks & Benefits" />
@@ -193,7 +193,7 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions */}
-      <section id="openings" className="section-padding bg-navy">
+      <section id="openings" className="section-padding bg-black">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -210,25 +210,25 @@ export default function CareersPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="card hover:border-cyan/70 group"
+                className="card hover:border-primary/70 group"
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-cyan transition-colors">
+                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                       {job.title}
                     </h3>
 
                     <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-400">
                       <div className="flex items-center gap-2">
-                        <Briefcase className="w-4 h-4 text-cyan" />
+                        <Briefcase className="w-4 h-4 text-primary" />
                         {job.department}
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4 text-cyan" />
+                        <MapPin className="w-4 h-4 text-primary" />
                         {job.location}
                       </div>
                       <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4 text-cyan" />
+                        <Clock className="w-4 h-4 text-primary" />
                         {job.type}
                       </div>
                     </div>
@@ -236,11 +236,11 @@ export default function CareersPage() {
                     <p className="text-gray-300 mb-4">{job.description}</p>
 
                     <div className="space-y-2">
-                      <p className="text-sm font-semibold text-cyan">Requirements:</p>
+                      <p className="text-sm font-semibold text-primary">Requirements:</p>
                       <ul className="space-y-1">
                         {job.requirements.map((req, i) => (
                           <li key={i} className="text-sm text-gray-400 flex items-start gap-2">
-                            <span className="text-cyan mt-1">•</span>
+                            <span className="text-primary mt-1">•</span>
                             <span>{req}</span>
                           </li>
                         ))}
@@ -268,7 +268,7 @@ export default function CareersPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-gradient-to-r from-cyan to-cyan-light">
+      <section className="section-padding bg-gradient-to-r from-primary to-purple">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -286,7 +286,7 @@ export default function CareersPage() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-cyan font-semibold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all"
+                className="bg-white text-primary font-semibold px-8 py-4 rounded-lg shadow-xl hover:shadow-2xl transition-all"
               >
                 Get in Touch
               </motion.button>

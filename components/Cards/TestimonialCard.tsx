@@ -29,9 +29,9 @@ export default function TestimonialCard({
       viewport={{ once: true }}
       className="card relative"
     >
-      <Quote className="absolute top-4 right-4 w-12 h-12 text-cyan/20" />
+      <Quote className="absolute top-4 right-4 w-12 h-12 text-primary/20" />
       <div className="flex items-center gap-4 mb-4">
-        <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-cyan/30">
+        <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary/30">
           <Image
             src={image}
             alt={name}
@@ -41,7 +41,7 @@ export default function TestimonialCard({
         </div>
         <div>
           <h4 className="font-bold text-white">{name}</h4>
-          <p className="text-sm text-cyan">{role}</p>
+          <p className="text-sm text-primary">{role}</p>
           <p className="text-xs text-gray-400">{company}</p>
         </div>
       </div>

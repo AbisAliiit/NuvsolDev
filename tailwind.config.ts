@@ -9,21 +9,39 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: '#00AEEF',
+          light: '#00D4FF',
+          dark: '#0099CC',
+          darker: '#007AA3',
+        },
+        cyan: {
+          DEFAULT: '#00AEEF',
+          light: '#00D4FF',
+          dark: '#0099CC',
+        },
+        blue: {
+          DEFAULT: '#0066FF',
+          light: '#3385FF',
+          dark: '#0052CC',
+        },
         navy: {
           DEFAULT: '#0A0F24',
           dark: '#060A18',
           light: '#141B35',
         },
-        cyan: {
-          DEFAULT: '#00AEEF',
-          light: '#00D4FF',
-          dark: '#0089C2',
+        black: {
+          DEFAULT: '#000000',
+          light: '#0f0f0f',
+          lighter: '#1a1a1a',
         },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-primary': 'linear-gradient(135deg, #00AEEF 0%, #0066FF 100%)',
         'gradient-cyan': 'linear-gradient(135deg, #00AEEF 0%, #00D4FF 100%)',
+        'gradient-blue': 'linear-gradient(135deg, #0066FF 0%, #3385FF 100%)',
         'gradient-navy': 'linear-gradient(135deg, #0A0F24 0%, #141B35 100%)',
       },
       animation: {
@@ -37,7 +55,7 @@ const config: Config = {
         },
         glow: {
           '0%': { boxShadow: '0 0 20px rgba(0, 174, 239, 0.5)' },
-          '100%': { boxShadow: '0 0 30px rgba(0, 212, 255, 0.8)' },
+          '100%': { boxShadow: '0 0 30px rgba(0, 174, 239, 0.8)' },
         },
       },
     },

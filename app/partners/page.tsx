@@ -39,7 +39,7 @@ export default function PartnersPage() {
       />
 
       {/* Technology Partners */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -58,11 +58,11 @@ export default function PartnersPage() {
                 viewport={{ once: true }}
                 className="card text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-gradient-to-br from-cyan to-cyan-light rounded-full">
-                  <partner.icon className="w-8 h-8 text-white" />
+                <div className="inline-flex items-center justify-center w-16 h-16 mb-4 bg-primary/10 rounded-full">
+                  <partner.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{partner.title}</h3>
-                <p className="text-gray-400">{partner.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{partner.title}</h3>
+                <p className="text-gray-500">{partner.description}</p>
               </motion.div>
             ))}
           </div>
@@ -70,17 +70,17 @@ export default function PartnersPage() {
       </section>
 
       {/* Join Us */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-gradient-to-br from-cyan to-cyan-light rounded-full">
-                <Handshake className="w-10 h-10 text-white" />
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-primary/10 rounded-full">
+                <Handshake className="w-10 h-10 text-primary" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="gradient-text">Join Us as a Partner</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                Join Us as a Partner
               </h2>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-500 mb-8 leading-relaxed">
                 We welcome collaborations with clinics, home cooks, health professionals, and 
                 organizations seeking innovative automation.
               </p>

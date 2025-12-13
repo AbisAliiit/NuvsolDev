@@ -70,12 +70,12 @@ export default function MealMindPage() {
       />
 
       {/* The Problem */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
               title="The Problem"
-              subtitle="People crave authentic food, healthy options, or culturally specific dishes"
+              subtitle="People crave authentic food, healthy options, or culturally specific dishes — but traditional delivery apps don't provide"
             />
           </AnimatedSection>
 
@@ -87,18 +87,15 @@ export default function MealMindPage() {
               viewport={{ once: true }}
               className="card"
             >
-              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                But traditional delivery apps don&apos;t provide:
-              </p>
               <div className="space-y-3 mb-6">
                 {problems.map((problem, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-gray-300">{problem}</span>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-gray-500">{problem}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-500 leading-relaxed">
                 Home cooks also lack a stable way to earn income doing what they love.
               </p>
             </motion.div>
@@ -107,12 +104,12 @@ export default function MealMindPage() {
       </section>
 
       {/* The Solution */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
               title="The MealMind Solution"
-              subtitle="Connecting home cooks with customers"
+              subtitle="MealMind connects home cooks with customers seeking"
             />
           </AnimatedSection>
 
@@ -124,18 +121,15 @@ export default function MealMindPage() {
               viewport={{ once: true }}
               className="card"
             >
-              <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-                MealMind connects home cooks with customers seeking:
-              </p>
               <div className="space-y-4 mb-6">
                 {solutions.map((solution, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-cyan flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-300 text-lg">{solution}</span>
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-500 text-lg">{solution}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-500 leading-relaxed">
                 AI features include macro estimation, health preference mapping, and intelligent bidding for 
                 personalized orders.
               </p>
@@ -145,7 +139,7 @@ export default function MealMindPage() {
       </section>
 
       {/* Key Features */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -164,11 +158,11 @@ export default function MealMindPage() {
                 viewport={{ once: true }}
                 className="card"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-gradient-to-br from-cyan to-cyan-light rounded-lg">
-                  <feature.icon className="w-6 h-6 text-white" />
+                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-primary/10 rounded-lg">
+                  <feature.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
-                <p className="text-gray-400 text-sm">{feature.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-gray-500 text-sm">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -176,16 +170,16 @@ export default function MealMindPage() {
       </section>
 
       {/* CTAs */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <AnimatedSection>
               <div className="card text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-gradient-to-br from-cyan to-cyan-light rounded-full">
-                  <Users className="w-10 h-10 text-white" />
+                <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-primary/10 rounded-full">
+                  <Users className="w-10 h-10 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Join as a Home Cook</h3>
-                <p className="text-gray-300 mb-6">Earn money doing what you love.</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Join as a Home Cook</h3>
+                <p className="text-gray-500 mb-6">Earn money doing what you love.</p>
                 <Link href="/contact">
                   <PrimaryButton className="group/btn">
                     Apply to Cook
@@ -197,11 +191,11 @@ export default function MealMindPage() {
 
             <AnimatedSection delay={0.2}>
               <div className="card text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-gradient-to-br from-cyan to-cyan-light rounded-full">
-                  <Utensils className="w-10 h-10 text-white" />
+                <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-primary/10 rounded-full">
+                  <Utensils className="w-10 h-10 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">Discover Meals</h3>
-                <p className="text-gray-300 mb-6">Find authentic, healthy meals made in your community.</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Discover Meals</h3>
+                <p className="text-gray-500 mb-6">Find authentic, healthy meals made in your community.</p>
                 <Link href="/contact">
                   <PrimaryButton className="group/btn">
                     Explore Meals

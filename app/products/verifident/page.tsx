@@ -71,7 +71,7 @@ export default function VerifiDentPage() {
       />
 
       {/* The Problem */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -88,29 +88,29 @@ export default function VerifiDentPage() {
               viewport={{ once: true }}
               className="card"
             >
-              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-                This causes delays, administrative burnout, and lost treatment opportunities.
-              </p>
-              <div className="space-y-3">
+              <div className="space-y-3 mb-6">
                 {problems.map((problem, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
-                    <span className="text-gray-300">{problem}</span>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <span className="text-gray-500">{problem}</span>
                   </div>
                 ))}
               </div>
+              <p className="text-lg text-gray-500 leading-relaxed">
+                This causes delays, administrative burnout, and lost treatment opportunities.
+              </p>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* The Solution */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
               title="The VerifiDent Solution"
-              subtitle="Automating the full verification workflow"
+              subtitle="VerifiDent automates the full verification workflow"
             />
           </AnimatedSection>
 
@@ -122,18 +122,15 @@ export default function VerifiDentPage() {
               viewport={{ once: true }}
               className="card"
             >
-              <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-                VerifiDent automates the full verification workflow:
-              </p>
               <div className="space-y-4 mb-6">
                 {solutions.map((solution, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-cyan flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-300 text-lg">{solution}</span>
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-500 text-lg">{solution}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-xl font-semibold gradient-text">
+              <p className="text-xl font-semibold text-gray-900">
                 Same-day treatment approvals become simple.
               </p>
             </motion.div>
@@ -142,7 +139,7 @@ export default function VerifiDentPage() {
       </section>
 
       {/* Key Features */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -161,11 +158,11 @@ export default function VerifiDentPage() {
                 viewport={{ once: true }}
                 className="card"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-gradient-to-br from-cyan to-cyan-light rounded-lg">
-                  <feature.icon className="w-6 h-6 text-white" />
+                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-primary/10 rounded-lg">
+                  <feature.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
-                <p className="text-gray-400 text-sm">{feature.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-gray-500 text-sm">{feature.description}</p>
               </motion.div>
             ))}
           </div>
@@ -173,21 +170,21 @@ export default function VerifiDentPage() {
       </section>
 
       {/* Pilot Program */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-gradient-to-br from-cyan to-cyan-light rounded-full">
-                <Zap className="w-10 h-10 text-white" />
+              <div className="inline-flex items-center justify-center w-20 h-20 mb-6 bg-primary/10 rounded-full">
+                <Zap className="w-10 h-10 text-primary" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="gradient-text">Pilot Program</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                Pilot Program
               </h2>
-              <p className="text-xl text-gray-300 mb-4 leading-relaxed">
+              <p className="text-xl text-gray-500 mb-4 leading-relaxed">
                 We are currently piloting VerifiDent with leading dental practices to refine workflows, 
                 accuracy, and efficiency.
               </p>
-              <p className="text-lg text-gray-400 mb-8">
+              <p className="text-lg text-gray-500 mb-8">
                 Become an early adopter and shape the future of dental automation.
               </p>
               <Link href="/contact">

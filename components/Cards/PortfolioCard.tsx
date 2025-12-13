@@ -29,21 +29,21 @@ export default function PortfolioCard({ title, description, image, tags, index }
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-60" />
-        <div className="absolute top-4 right-4 p-2 bg-cyan rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="absolute top-4 right-4 p-2 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
           <ExternalLink className="w-5 h-5 text-white" />
         </div>
       </div>
-      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan transition-colors">
+      <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
         {title}
       </h3>
-      <p className="text-gray-400 mb-4 text-sm">
+      <p className="text-gray-500 mb-4 text-sm">
         {description}
       </p>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag, i) => (
           <span
             key={i}
-            className="px-3 py-1 text-xs bg-navy border border-cyan/30 text-cyan rounded-full"
+            className="px-3 py-1 text-xs bg-primary/10 border border-primary/20 text-primary rounded-full"
           >
             {tag}
           </span>

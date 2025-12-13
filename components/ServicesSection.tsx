@@ -28,8 +28,8 @@ const services = [
   },
   {
     icon: Database,
-    title: 'Data Analytics',
-    description: 'Transform raw data into actionable insights with advanced analytics, visualization, and business intelligence.',
+    title: 'Data Analytics & Services',
+    description: 'Transform raw data into actionable insights with advanced analytics, data visualization, business intelligence, and comprehensive data services.',
   },
   {
     icon: Zap,
@@ -40,7 +40,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="section-padding bg-navy">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <AnimatedSection>
           <SectionTitle
@@ -49,7 +49,7 @@ export default function ServicesSection() {
           />
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

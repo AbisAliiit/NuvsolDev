@@ -45,7 +45,7 @@ const projects = [
 
 export default function PortfolioGrid() {
   return (
-    <section className="section-padding bg-navy-light">
+    <section className="section-padding bg-black-light">
       <div className="container-custom">
         <AnimatedSection>
           <SectionTitle

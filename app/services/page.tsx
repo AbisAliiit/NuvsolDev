@@ -21,7 +21,7 @@ const serviceDetails = [
       'AI Strategy Consulting',
       'Model Training & Optimization',
     ],
-    color: 'from-cyan to-cyan-light',
+    color: 'from-primary to-blue',
   },
   {
     title: 'Web Development',
@@ -34,7 +34,7 @@ const serviceDetails = [
       'API Development & Integration',
       'Performance Optimization',
     ],
-    color: 'from-blue-500 to-cyan',
+    color: 'from-blue to-primary',
   },
   {
     title: 'Mobile App Development',
@@ -47,7 +47,7 @@ const serviceDetails = [
       'Push Notifications',
       'In-App Payments',
     ],
-    color: 'from-cyan-light to-blue-400',
+    color: 'from-primary-light to-blue',
   },
   {
     title: 'Cloud Solutions',
@@ -60,20 +60,20 @@ const serviceDetails = [
       'Kubernetes & Docker',
       'Cloud Security',
     ],
-    color: 'from-cyan to-blue-500',
+    color: 'from-primary to-blue',
   },
   {
-    title: 'Data Analytics',
-    description: 'Turn data into actionable insights with advanced analytics.',
+    title: 'Data Analytics & Services',
+    description: 'Turn data into actionable insights with advanced analytics, data processing, and comprehensive data services.',
     features: [
       'Business Intelligence',
       'Data Visualization',
       'Big Data Processing',
       'ETL Pipeline Development',
       'Real-Time Analytics',
-      'Custom Dashboards',
+      'Custom Dashboards & Data Services',
     ],
-    color: 'from-blue-400 to-cyan-light',
+    color: 'from-blue to-primary-light',
   },
   {
     title: 'Digital Transformation',
@@ -86,7 +86,7 @@ const serviceDetails = [
       'Change Management',
       'Training & Support',
     ],
-    color: 'from-cyan-light to-cyan',
+    color: 'from-primary-light to-blue',
   },
 ];
 
@@ -139,7 +139,7 @@ export default function ServicesPage() {
       <ServicesSection />
 
       {/* Detailed Services */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -163,16 +163,16 @@ export default function ServicesPage() {
                     <div className={`inline-block px-4 py-2 bg-gradient-to-r ${service.color} rounded-lg text-white font-bold text-sm mb-4`}>
                       Service {index + 1}
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
-                    <p className="text-gray-400">{service.description}</p>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                    <p className="text-gray-500">{service.description}</p>
                   </div>
 
                   <div className="lg:col-span-2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {service.features.map((feature, i) => (
                         <div key={i} className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-cyan flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-300">{feature}</span>
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-500">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -185,7 +185,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -204,12 +204,12 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 className="card relative"
               >
-                <div className="text-6xl font-bold gradient-text opacity-20 absolute top-4 right-4">
+                <div className="text-6xl font-bold text-primary/20 absolute top-4 right-4">
                   {item.step}
                 </div>
                 <div className="relative z-10">
-                  <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                  <p className="text-gray-400">{item.description}</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                  <p className="text-gray-500">{item.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -218,7 +218,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -227,10 +227,10 @@ export default function ServicesPage() {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="gradient-text">Ready to Get Started?</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Ready to Get Started?
             </h2>
-            <p className="text-xl text-gray-400 mb-8">
+            <p className="text-xl text-gray-500 mb-8">
               Let&apos;s discuss your project and how we can help you achieve your goals.
             </p>
             <Link href="/contact">

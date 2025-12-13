@@ -21,7 +21,7 @@ export default function TeamCard({ name, role, image, bio, index }: TeamCardProp
       viewport={{ once: true }}
       className="card text-center group"
     >
-      <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan/20 group-hover:border-cyan transition-colors">
+      <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary transition-colors">
         <Image
           src={image}
           alt={name}
@@ -30,18 +30,18 @@ export default function TeamCard({ name, role, image, bio, index }: TeamCardProp
         />
       </div>
       <h3 className="text-xl font-bold text-white mb-1">{name}</h3>
-      <p className="text-cyan text-sm mb-3">{role}</p>
+      <p className="text-primary text-sm mb-3">{role}</p>
       <p className="text-gray-400 text-sm mb-4">{bio}</p>
       <div className="flex justify-center gap-3">
         <motion.a
           whileHover={{ scale: 1.2 }}
-          className="p-2 bg-navy rounded-full hover:bg-cyan transition-colors cursor-pointer"
+          className="p-2 bg-black-light rounded-full hover:bg-primary transition-colors cursor-pointer"
         >
           <Linkedin className="w-4 h-4" />
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.2 }}
-          className="p-2 bg-navy rounded-full hover:bg-cyan transition-colors cursor-pointer"
+          className="p-2 bg-black-light rounded-full hover:bg-primary transition-colors cursor-pointer"
         >
           <Twitter className="w-4 h-4" />
         </motion.a>

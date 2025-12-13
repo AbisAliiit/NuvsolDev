@@ -54,8 +54,8 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-              Full Name *
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+              Name *
             </label>
             <input
               type="text"
@@ -64,14 +64,14 @@ export default function ContactForm() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-navy border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan transition-colors"
-              placeholder="John Doe"
+              className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-primary transition-colors"
+              placeholder="Your Name"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-              Email Address *
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+              Email *
             </label>
             <input
               type="email"
@@ -80,14 +80,14 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-navy border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan transition-colors"
-              placeholder="john@example.com"
+              className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-primary transition-colors"
+              placeholder="your@email.com"
             />
           </div>
         </div>
 
         <div>
-          <label htmlFor="organization" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-2">
             Organization
           </label>
           <input
@@ -96,13 +96,13 @@ export default function ContactForm() {
             name="organization"
             value={formData.organization}
             onChange={handleChange}
-            className="w-full px-4 py-3 bg-navy border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan transition-colors"
+            className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-primary transition-colors"
             placeholder="Your Organization"
           />
         </div>
 
         <div>
-          <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="inquiryType" className="block text-sm font-medium text-gray-700 mb-2">
             Type of Inquiry *
           </label>
           <select
@@ -111,7 +111,7 @@ export default function ContactForm() {
             value={formData.inquiryType}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-navy border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan transition-colors"
+            className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-primary transition-colors"
           >
             <option value="">Select an option</option>
             <option value="partnership">Partnership</option>
@@ -123,7 +123,7 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
             Message *
           </label>
           <textarea
@@ -133,8 +133,8 @@ export default function ContactForm() {
             onChange={handleChange}
             required
             rows={6}
-            className="w-full px-4 py-3 bg-navy border border-gray-700 rounded-lg text-white focus:outline-none focus:border-cyan transition-colors resize-none"
-            placeholder="Tell us about your project..."
+            className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-primary transition-colors resize-none"
+            placeholder="Your message..."
           />
         </div>
 

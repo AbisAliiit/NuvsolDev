@@ -67,7 +67,7 @@ export default function TechnologyPage() {
       />
 
       {/* Our Approach */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -84,18 +84,18 @@ export default function TechnologyPage() {
               viewport={{ once: true }}
               className="card"
             >
-              <p className="text-xl text-gray-300 mb-6 leading-relaxed">
+              <p className="text-xl text-gray-500 mb-6 leading-relaxed">
                 We build applied AI, grounded in:
               </p>
               <div className="space-y-4 mb-6">
                 {approachPoints.map((point, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-cyan flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-300 text-lg">{point}</span>
+                    <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-500 text-lg">{point}</span>
                   </div>
                 ))}
               </div>
-              <p className="text-lg text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-500 leading-relaxed">
                 Our products are designed to solve the actual pain points professionals face daily.
               </p>
             </motion.div>
@@ -104,7 +104,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Core Technologies */}
-      <section className="section-padding bg-navy-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -123,11 +123,11 @@ export default function TechnologyPage() {
                 viewport={{ once: true }}
                 className="card"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-gradient-to-br from-cyan to-cyan-light rounded-lg">
-                  <tech.icon className="w-6 h-6 text-white" />
+                <div className="inline-flex items-center justify-center w-12 h-12 mb-4 bg-primary/10 rounded-lg">
+                  <tech.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{tech.title}</h3>
-                <p className="text-gray-400 text-sm">{tech.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{tech.title}</h3>
+                <p className="text-gray-500 text-sm">{tech.description}</p>
               </motion.div>
             ))}
           </div>
@@ -135,7 +135,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* Security & Compliance */}
-      <section className="section-padding bg-navy">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection>
             <SectionTitle
@@ -155,8 +155,8 @@ export default function TechnologyPage() {
               <div className="space-y-4">
                 {securityFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <Shield className="w-6 h-6 text-cyan flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-300 text-lg">{feature}</span>
+                    <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-500 text-lg">{feature}</span>
                   </div>
                 ))}
               </div>

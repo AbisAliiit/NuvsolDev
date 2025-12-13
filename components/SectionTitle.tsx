@@ -23,11 +23,11 @@ export default function SectionTitle({ title, subtitle, align = 'center' }: Sect
       viewport={{ once: true }}
       className={`mb-16 ${alignClass}`}
     >
-      <h2 className="text-4xl md:text-5xl font-bold mb-4">
-        <span className="gradient-text">{title}</span>
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+        {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-500 max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}

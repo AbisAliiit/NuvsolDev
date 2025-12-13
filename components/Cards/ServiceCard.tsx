@@ -17,17 +17,17 @@ export default function ServiceCard({ icon: Icon, title, description, index }: S
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      whileHover={{ y: -10 }}
+      whileHover={{ y: -5 }}
       className="card group cursor-pointer"
     >
       <div className="flex flex-col items-start space-y-4">
-        <div className="p-3 bg-gradient-to-br from-cyan to-cyan-light rounded-lg group-hover:animate-glow">
-          <Icon className="w-8 h-8 text-white" />
+        <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+          <Icon className="w-8 h-8 text-primary" />
         </div>
-        <h3 className="text-xl font-bold text-white group-hover:text-cyan transition-colors">
+        <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors">
           {title}
         </h3>
-        <p className="text-gray-400 leading-relaxed">
+        <p className="text-gray-500 leading-relaxed text-sm">
           {description}
         </p>
       </div>
