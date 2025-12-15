@@ -32,10 +32,10 @@ export default function Navbar() {
           <Link href="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-2"
+              className="flex items-center"
             >
               {/* Logo Image */}
-              <div className="relative w-10 h-10">
+              <div className="relative w-20 h-20">
                 <Image
                   src="/logo.png"
                   alt="NUVSOL Logo"
@@ -44,7 +44,6 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="text-2xl font-bold text-gray-900">NUVSOL</span>
             </motion.div>
           </Link>
 
