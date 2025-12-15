@@ -35,7 +35,7 @@ export default function Navbar() {
               className="flex items-center"
             >
               {/* Logo Image */}
-              <div className="relative w-20 h-20">
+              <div className="relative w-32 h-32">
                 <Image
                   src="/logo.png"
                   alt="NUVSOL Logo"
